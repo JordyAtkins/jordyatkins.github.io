@@ -2,41 +2,34 @@
 <html>
 	<head>
 		<title>Hello.</title>
-		<link href="http://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet" type="text/css">
-		<style>
-			body { background: #9BB98F; }
-			.hello {
-				width:4em;
-				height:2em;
-				position:absolute;
-				top:0;
-				bottom:0;
-				left:0;
-				right:0;
-				font-family: 'Julius Sans One', sans-serif;
-				color: #505F52;
-				margin: auto;
-			    -webkit-transition-duration: 0.8s;
-			    -moz-transition-duration: 0.8s;
-			    -o-transition-duration: 0.8s;
-			    transition-duration: 0.8s;
-			    -webkit-transition-property: -webkit-transform;
-			    -moz-transition-property: -moz-transform;
-			    -o-transition-property: -o-transform;
-			    transition-property: transform;
-			    overflow:hidden;
-			 
-			}   
- 
-			.hello:hover { 
-			    -webkit-transform:rotate(360deg);
-			    -moz-transform:rotate(360deg); 
-			    -o-transform:rotate(360deg);
-			} 
-
-		</style>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<h1 class="hello">Hello.</h1>
+		<div class="content-wrapper">
+			<section>
+				<span class="line">
+					Hello, I'm Jordy.
+				</span>
+				<span class="line">
+					Currently there is nothing here.
+				</span>
+				<span class="line">
+					<a href="#" onClick="magicalMysteryTourOfTheNet()">
+						Click here to go somewhere else...
+					</a>
+				</span>
+			</section>
+		</div>
+		<script>
+			var urls = ['https://pay.reddit.com/r/random', 'https://pay.reddit.com/random',
+			'http://cashcats.biz', 'http://en.wikipedia.org/wiki/Special:Random',
+			'https://pay.reddit.com/r/birdswitharms+bearsdoinghumanthings+animalsbeingjerks+animalsbeingbros',
+			'http://weavesilk.com', 'http://realitytourist.new/inkblobs', 'https://imgur.com/random'];
+
+			function magicalMysteryTourOfTheNet(){
+				window.location = urls[Math.floor(Math.random() * urls.length)];
+			}
+		</script>
 	</body>
 </html>
