@@ -1,10 +1,87 @@
-<!doctype>
-<html>
-  <head>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <h1>Hello.</h1>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>JordyAtkins</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            font-family: Consolas, sans-serif;
+            padding: 20px;
+            background: #434343;
+            color: #dddddd;
+        }
+
+        header {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section:before {
+            content: attr(class);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        section p:first-child {
+            margin-top: 10px;
+        }
+
+        p {
+            text-transform: lowercase;
+            margin-bottom: 5px;
+        }
+
+        p:before {
+            content: '- ';
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    Hello, I'm Jordy
+</header>
+<main>
+    <section class="about-me">
+        <p>26 year old developer living near Manchester, UK</p>
+        <p>I love writing code</p>
+        <p>I love playing with new tech</p>
+        <p>I like brevity</p>
+    </section>
+    <section class="work">
+        <p><a href="http://www.csimedia.net/">CSI Media (Oct. 2013 - present)</a></p>
+        <p><a href="http://www.esendex.co.uk/">Esendex (May - Sept 2013)</a></p>
+        <p><a href="http://www.nskeurope.com/">NSK Europe (June 2011 - August 2013)</a></p>
+    </section>
+    <section class="education">
+        <p><a href="http://www.derby.ac.uk/">University of Derby (2009 - 2013)</a></p>
+    </section>
+    <section class="contact">
+        <p>email : jordon[at]kins.rocks</p>
+        <p><a href="https://www.facebook.com/jordyatkins">FaceBook</a></p>
+        <p><a href="https://uk.linkedin.com/in/jordon-atkins-1a365037">Linkedin</a></p>
+    </section>
+</main>
+
+</body>
 </html>
