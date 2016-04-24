@@ -55,6 +55,15 @@
             text-decoration: underline;
         }
 
+        .summary {
+            display: block;
+            text-indent: 2em;
+        }
+
+        .summary:before {
+            content: '-> ';
+        }
+
     </style>
 </head>
 <body>
@@ -69,12 +78,23 @@
         <p>I like brevity</p>
     </section>
     <section class="work">
-        <p><a href="http://www.csimedia.net/">CSI Media (Oct. 2013 - present)</a></p>
-        <p><a href="http://www.esendex.co.uk/">Esendex (May - Sept 2013)</a></p>
-        <p><a href="http://www.nskeurope.com/">NSK Europe (June 2011 - August 2013)</a></p>
+        <p>
+            <a href="http://www.csimedia.net/">CSI Media (October 2013 - present)</a>
+            <span class="summary">C#, ASP.NET MVC, WebAPI, SQL Server, JS, Nuget, TeamCity</span>
+        </p>
+        <p>
+            <a href="http://www.esendex.co.uk/">Esendex (May 2013 - Sept 2013)</a>
+            <span class="summary">C#, ASP.NET WebForms, ASP.NET MVC, SQL Server, MSBuild/Jenkins</span>
+        </p>
+        <p>
+            <a href="http://www.nskeurope.com/">NSK Europe (June 2011 - August 2012)</a>
+            <span class="summary">C#, VB.Net, ASP.NET WebForms, WinForms, .NET CE, SQL Server</span>
+        </p>
     </section>
     <section class="education">
-        <p><a href="http://www.derby.ac.uk/">University of Derby (2009 - 2013)</a></p>
+        <p><a href="http://www.derby.ac.uk/">University of Derby (2009 - 2013)</a>
+            <span class="summary">Computer Science - Second-class honours</span>
+        </p>
     </section>
     <section class="contact">
         <p>email : jordon[at]kins.rocks</p>
